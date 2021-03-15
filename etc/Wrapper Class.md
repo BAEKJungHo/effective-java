@@ -10,3 +10,5 @@ InstrumentedSet 같은 클래스를 `래퍼 클래스(Wrapper Class)`라 하며,
 콜백 때는 래퍼가 아닌 내부 객체를 호출하게 된다. 이를 `SELF 문제`라고 한다.
 
 > https://stackoverflow.com/questions/28254116/wrapper-classes-are-not-suited-for-callback-frameworks
+
+상속의 취약점을 피하려면 상속 대신 컴포지션과 전달을 사용하자. 특히 래퍼 클래스로 구현할 적당한 인터페이스가 있다면 더욱 그렇다. 래퍼 클래스는 하위 클래스보다 견고하고 강력하다.
